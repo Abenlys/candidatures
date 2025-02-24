@@ -20,6 +20,8 @@ const availableThemeColors = [
   { name: "Blue", light: "bg-blue-600", dark: "bg-blue-700" },
   { name: "Green", light: "bg-green-600", dark: "bg-green-500" },
   { name: "Orange", light: "bg-orange-500", dark: "bg-orange-700" },
+  { name: "Yellow", light: "bg-yellow-400", dark: "bg-yellow-500" },
+  { name: "Purple", light: "bg-purple-500", dark: "bg-purple-500" },
 ];
 
 export function ThemeColorToggle() {
@@ -35,7 +37,7 @@ export function ThemeColorToggle() {
               "rounded-full",
               "w-[20px]",
               "h-[20px]",
-              theme === "light" ? light : dark,
+              theme === "light" ? light : dark
             )}
           ></div>
           <div className="text-sm">{name}</div>
